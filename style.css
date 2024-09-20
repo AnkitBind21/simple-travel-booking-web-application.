@@ -167,51 +167,10 @@ header nav ul li a:hover {
     gap: 20px;
 }
 
-/* Available Travel Packages Section */
-.package-item {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.package-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.package-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.package-description {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-.package-price {
-    font-size: 1.5rem;
-    color: #1e90ff;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.package-rating {
-    font-size: 1rem;
-    color: #ffc107; /* Rating star color */
-    margin-bottom: 10px;
-}
-
 /* Booking Button */
 .book-btn {
-    padding: 10px 18px;  /* Slightly smaller than before */
-    background-color: #28a745; /* Green for the booking button */
+    padding: 10px 18px;
+    background-color: #28a745; 
     color: white;
     font-size: 1rem;
     border-radius: 8px;
@@ -223,27 +182,6 @@ header nav ul li a:hover {
 .book-btn:hover {
     background-color: #218838;
     transform: scale(1.05);
-}
-
-/* Footer and Trip Ideas Shadows */
-#trip-ideas, footer {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-
-/* Booking Section */
-#booking-section {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-#booking-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 /* Trip Ideas Section */
@@ -300,4 +238,11 @@ footer p {
 /* Hide sections */
 .hidden {
     display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #flight-search-form {
+        flex-direction: column;
+    }
 }
