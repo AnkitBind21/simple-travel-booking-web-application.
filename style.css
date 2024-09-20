@@ -1,0 +1,303 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #005bbb;
+}
+
+/* Hero Section */
+#hero {
+    height: 70vh;
+    background-image: url('./images/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Search Section */
+#search-section {
+    background-color: #fff;
+    padding: 30px 30px; 
+    margin: -100px auto 20px; 
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; 
+    max-width: 1100px; 
+    position: relative;
+    z-index: 1;
+}
+
+#search-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+#flight-search-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex-grow: 1;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1e90ff;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #005bbb;
+}
+
+/* Results Section */
+#results-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.package-results {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Available Travel Packages Section */
+.package-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.package-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.package-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.package-price {
+    font-size: 1.5rem;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.package-rating {
+    font-size: 1rem;
+    color: #ffc107; /* Rating star color */
+    margin-bottom: 10px;
+}
+
+/* Booking Button */
+.book-btn {
+    padding: 10px 18px;  /* Slightly smaller than before */
+    background-color: #28a745; /* Green for the booking button */
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer and Trip Ideas Shadows */
+#trip-ideas, footer {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* Booking Section */
+#booking-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Trip Ideas Section */
+#trip-ideas {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#trip-ideas h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.trip-ideas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trip-idea {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.trip-idea:hover {
+    transform: translateY(-2px);
+}
+
+.trip-idea img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Hide sections */
+.hidden {
+    display: none;
+}

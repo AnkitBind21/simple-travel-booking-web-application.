@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WingsAway - Flight Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>WingsAway</h1>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+       
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Book Your Next Adventure</h2>
+            <p>Find flights to your favorite destinations at the best prices.</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search-section">
+        <div class="container">
+            <h2>Search Flights</h2>
+            <form id="flight-search-form">
+                <div class="input-group">
+                    <label for="from">From</label>
+                    <input type="text" id="from" placeholder="Departure City" required>
+                </div>
+                <div class="input-group">
+                    <label for="to">To</label>
+                    <input type="text" id="to" placeholder="Destination City" required>
+                </div>
+                <div class="input-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="input-group">
+                    <label for="budget">Budget (₹)</label>
+                    <input type="number" id="budget" placeholder="Max Budget" required>
+                </div>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-section" class="hidden">
+        <div class="container">
+            <h2>Available Packages</h2>
+            <div class="package-results"></div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking-section" class="hidden">
+        <div class="container">
+            <h2>Complete Your Booking</h2>
+            <form id="booking-form">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="book-btn">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Trip Ideas Section -->
+    <section id="trip-ideas">
+        <h2>Trip Ideas from India</h2>
+        <div class="trip-ideas-container">
+            <div class="trip-idea"><img src="./images/goa.jpg" alt="Goa"><h3>Goa</h3><p>India</p><b> ₹4,467 </b></div>
+            <div class="trip-idea"><img src="./images/jaipur.jpg" alt="Jaipur"><h3>Jaipur</h3><p>India</p><b> ₹6,669 </b></div>
+            <div class="trip-idea"><img src="./images/taj.jpg" alt="Agra"><h3>Agra</h3><p>India</p><b> ₹11,743 </b></div>
+            <div class="trip-idea"><img src="./images/varanasi.jpg" alt="Varanasi"><h3>Varanasi</h3><p>India</p><b> ₹8,759 </b></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: support@wingsaway.com</p>
+        <p>Phone: +91 12345 67890</p>
+        <p>Follow us on social media for the latest updates!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
