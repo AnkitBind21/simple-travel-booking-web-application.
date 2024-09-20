@@ -41,7 +41,7 @@ function displayFlights(flights) {
     // Iterate through flights and display them
     flights.forEach(flight => {
         const flightItem = document.createElement('div');
-        flightItem.classList.add('package-item'); // Ensure consistent styling
+        flightItem.classList.add('flight-item');
 
         flightItem.innerHTML = `
             <div class="flight-details">
@@ -58,9 +58,6 @@ function displayFlights(flights) {
 
     // Make the results section visible
     document.getElementById('results-section').classList.remove('hidden');
-
-    // Ensure booking section is hidden initially
-    document.getElementById('booking-section').classList.add('hidden');
 }
 
 // Show booking section when a user clicks "Book Now"
@@ -87,15 +84,8 @@ function showBookingSection(flightId) {
 
 // Book flight function
 function bookFlight(flight) {
-    const passengerName = document.getElementById('passenger-name').value;
-    const passengerEmail = document.getElementById('passenger-email').value;
-
-    if (passengerName && passengerEmail) {
-        alert(`Booking confirmed for ${flight.airline} from ${flight.from} to ${flight.to} on ${flight.date} for ₹${flight.price}.\nPassenger: ${passengerName}\nEmail: ${passengerEmail}`);
-        
-        // Optionally, you could reload the page to reset the form and hide the booking section
-        location.reload();
-    } else {
-        alert('Please fill in all fields to confirm your booking.');
-    }
+    alert(`Booking confirmed for ${flight.airline} from ${flight.from} to ${flight.to} on ${flight.date} for ₹${flight.price}.`);
+    
+    // Reload the page to reset the form and hide the booking section
+    location.reload();
 }
