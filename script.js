@@ -86,6 +86,6 @@ function showBookingSection(flightId) {
 function bookFlight(flight) {
     alert(`Booking confirmed for ${flight.airline} from ${flight.from} to ${flight.to} on ${flight.date} for ₹${flight.price}.`);
     
-    // Reload the page to reset the form and hide the booking section
+    // Optionally, you could reload the page to reset the form and hide the booking section
     location.reload();
 }
